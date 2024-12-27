@@ -1,0 +1,64 @@
+.showcase {
+  padding: 8rem 0;
+  text-align: center;
+}
+
+.card {
+  width: 50rem;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  overflow: hidden;
+  flex-shrink: 0;
+  margin-right: 5rem;
+  display: inline-block;
+  opacity: 0.6;
+  transition: all 1.5s;
+
+  &--active {
+    opacity: 1;
+  }
+
+  &:first-child {
+    margin-left: 5rem;
+  }
+
+  &__img {
+    display: block;
+    width: 100%;
+    height: 25rem;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  &__caption {
+    padding: 1rem 0;
+  }
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+
+  &__dots {
+    width: 1.2rem;
+    height: 1.2rem;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+    cursor: pointer;
+
+    &:not(:last-child) {
+      margin-right: 2rem;
+    }
+
+    &--selected {
+      background-color: #ee6787;
+      border-color: #ee6787;
+    }
+  }
+}
+
+.slider {
+  overflow-x: hidden;
+  white-space: nowrap;
+}
